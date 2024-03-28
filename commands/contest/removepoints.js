@@ -31,7 +31,8 @@ module.exports = {
             totalPoints.jakePoints -= points;
             fs.writeFileSync('points.json', JSON.stringify(totalPoints));
             await interaction.reply('-' + points + ' point(s) for Jake - ' + reason + '\nJake now has a total of ' + totalPoints.jakePoints + ' point(s).');
-        } else
-        await interaction.reply('-' + points + ' point(s) for ' + user.username + ' - ' + reason);
+        } else {
+            await interaction.reply('-' + points + ' point(s) for ' + user.username + ' - ' + reason);
+        }
 	},
 };
