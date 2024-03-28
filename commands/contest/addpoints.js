@@ -32,6 +32,6 @@ module.exports = {
             fs.writeFileSync('points.json', JSON.stringify(totalPoints));
             await interaction.reply('+' + points + ' point(s) for Jake - ' + reason + '\nJake now has a total of ' + totalPoints.jakePoints + ' point(s).');
         } else
-        await interaction.reply('+' + points + ' point(s) for ' + user.username + ' - ' + reason + '\nThis means absolutely nothing, they are irrelevant.');
+        await interaction.reply('+' + points + ' point(s) for ' + user.username + ' - ' + reason);
 	},
 };
